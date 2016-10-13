@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/placeholder.css" >
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-lg-4">
+                <form action="" class="form-horizontal">
+                    <div class="form-group">
+                        <label>用户名</label>
+                        <input type="text" class="form-control" placeholder="请输入用户名">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../lib/jquery/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/placeholder.js"></script>
+    <script type="text/javascript">
+    window.onload = function() {
+        var pl = new Placeholder('.form-control');
+        if (!pl.isPlaceholer()) {
+            pl.init();
+        }
+    }
+    </script>
+</body>
+
+</html>

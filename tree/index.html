@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/tree.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="fl-l left-tree">
+            <ul class="tree open">
+            </ul>
+        </div>
+        <div class="fl-l edit-tree">
+            <div class="new-knowledge">
+                <p>新增知识点</p>
+                <div class="mt10">
+                    <label>名称</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="mt10">
+                    <label>要求</label>
+                    <select class="">
+                        <option>忽略</option>
+                    </select>
+                </div>
+                <div class="mt10">
+                    <label>助记符</label>
+                    <input type="text" name="help-">
+                </div>
+                <div class="mt10">
+                    <button class="append-child-node">追加子节点</button>
+                </div>
+                <div class="mt10">
+                    <button class="append-node">追加同级节点</button>
+                </div>
+                <div class="mt10">
+                    <button class="insert-node">插入</button>
+                </div>
+            </div>
+            <div class="modify-knowledge">
+                <p>修改知识点</p>
+                <div class="mt10">
+                    <button class="edit-node">编辑节点</button>
+                </div>
+                <div class="mt10">
+                    <button class="delete-node">删除节点</button>
+                </div>
+                <div class="mt10">
+                    <button class="move-node">移动节点</button>
+                </div>
+            </div>
+            <div class="import-knowledge">
+                <p>导入知识点</p>
+                <div class="mt10">
+                    <button class="import-knowledge-file">从文件导入</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../lib/jquery/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/tree.js"></script>
+</body>
+
+</html>

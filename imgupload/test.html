@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+
+<body>
+    <div style="position: relative;width:200px">
+        <div class="select-more">
+            <span class="select-icon">
+            <input type="file" class="hidden-inputfile" accept="image/jpg,image/png,image/jpeg" name="attachment" id="attachment0">
+            </span>
+        </div>
+        <div class="img-container">
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../lib/jquery/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="js/pluginImgPreview.js"></script>
+<script type="text/javascript">
+$(function() {
+    $('.select-icon').imgPreview();
+})
+</script>
+
+</html>

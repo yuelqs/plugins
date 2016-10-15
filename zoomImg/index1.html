@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../dialog/css/dialog.css">
+    <link rel="stylesheet" type="text/css" href="css/zoomImg.css">
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul {
+        width: 300px;
+        overflow: hidden;
+        margin: 100px auto 0 auto;
+    }
+    
+    li {
+        list-style: none;
+        margin-left: 6px;
+        float: left;
+    }
+    
+    li img {
+        width: 100px;
+        height: 100px;
+    }
+     .preview-img {
+        width: 100px;
+        height: 100px;
+        background: url(images/Tulips.jpg);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="img-container">
+        <ul>
+            <li><img src="images/Hydrangeas.jpg" alt=""></li>
+            <li><img src="images/Lighthouse.jpg" alt=""></li>
+            <li><img src="images/Penguins.jpg" alt=""></li>
+            <li><img src="images/Chrysanthemum.jpg" alt=""></li>
+            <li><img src="images/Tulips.jpg" alt=""></li>
+            <li><img src="images/236522_880_510_70.jpg" alt=""></li>
+            <li><div class="preview-img"></div></li>
+        </ul>
+    </div>
+    <script type="text/javascript" data-main="js/main" src="../lib/requirejs/require.min.js"></script>
+</body>
+
+</html>

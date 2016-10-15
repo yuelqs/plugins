@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+}
+.wrap {
+    overflow: hidden;
+    height: 100%;
+}
+.fl-l {
+    float: left;
+    height: 800px;
+}
+.left-tree {
+    width: 50%;
+    background: lightblue;
+}
+.edit-tree {
+    width: 50%;
+    background: lightyellow;
+}
+ul,
+li {
+    list-style: none;
+}
+.tree {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.tree-header {
+    padding-left: 16px;
+    background: url(../images/treeview-default.gif) no-repeat -48px -45px;
+}
+.tree-item,
+.last-item {
+    padding-left: 16px;
+}
+.tree-item {
+    background: url(../images/treeview-default-line.gif) no-repeat 0 0;
+}
+.last-item {
+    background: url(../images/treeview-default-line.gif) no-repeat 0 -1766px;
+}
+.sub-tree.last-item {
+	padding-left: 0;
+	background-image: none;
+}
+.sub-tree.last-item>.sub-tree-header {
+	background-position: 0 -111px;
+}
+.sub-tree.last-item>.sub-tree-content {
+	background-image: none;
+}
+.sub-tree-content {
+    background: url(../images/treeview-default-line.gif) no-repeat 0 -191px;
+}
+.sub-tree-content {
+    padding-left: 16px;
+}
+.sub-tree-header {
+	position: relative;
+    padding-left: 16px;
+}
+.sub-tree-header> i {
+	position: absolute;
+	width: 16px;
+	height: 21px;
+	left: 0;
+	background-image: url(../images/treeview-default.gif);
+	background-repeat: no-repeat;
+}
+.sub-tree-header > a,
+.tree-item > a,
+.last-item > a {
+    text-decoration: none;
+    color: #000;
+}
+.sub-tree-header > .select,
+.tree-item > .select,
+.last-item > .select {
+    color: red;
+}
+
+.open > .sub-tree-header>i {
+    background-position: 0 -111px;
+}
+.off >.sub-tree-header>i {
+	background-position:  -32px -67px;
+}
+.off>.sub-tree-content {
+	display: none;
+}
+.edit-tree {
+    text-align: center;
+}
+.edit-tree p {
+    color: blue;
+}
+.new-knowledge,
+.modify-knowledge,
+.import-knowledge {
+    width: 200px;
+    margin-bottom: 20px;
+}
+.mt10 {
+    margin-top: 5px;
+}

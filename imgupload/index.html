@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>图片上传预览</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" type="text/css" href="../dialog/css/dialog.css">
+    <link rel="stylesheet" type="text/css" href="../zoomImg/css/zoomImg.css">
+</head>
+
+<body>
+    <form action="http://192.168.0.200:8080/attachment/uploadImg" method="post" target="f" enctype="multipart/form-data">
+        <div class="select-more">
+            <span class="select-icon">
+            <input type="file" class="hidden-inputfile" accept="image/jpg,image/png,image/jpeg" name="attachment" id="attachment0">
+            </span>
+        </div>
+        <button type="submit">上传</button>
+    </form>
+    <div class="img-container">
+    </div>
+    <iframe src="" frameborder="0" name="f"></iframe>
+    <script type="text/javascript" data-main ='js/main' src="../lib/requirejs/require.min.js"></script>
+</body>
+
+</html>

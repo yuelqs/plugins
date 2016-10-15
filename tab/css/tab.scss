@@ -1,0 +1,164 @@
+$backgroundColor:#cce680;
+.nav-wraper-w {
+    position: relative;
+    width: 100%;
+    height: 32px;
+    background-color: #cce680;
+}
+.nav-wraper {
+    position: relative;
+    height: 32px;
+    margin-left: 31px;
+    margin-right: 62px;
+    overflow: hidden;
+}
+.nav-wrap {
+    position: absolute;
+    z-index: 2;
+    width: 10000px;
+    height: 32px;
+    padding-top: 2px;
+    padding-left: 2px;
+    left: 0;
+    border-width: 0;
+    border-bottom: 1px solid #393;
+}
+.nav-tabs {
+    float: left;
+    border-width: 0;
+}
+.nav-tabs > li {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.nav-tabs > li,
+.dropdown,
+.left-arrow,
+.right-arrow {
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid #393;
+    background: url(../images/tab-menu-li-bg.gif) repeat-x 0 0;
+}
+.nav-tabs > li {
+    position: relative;
+    float: left;
+    margin-right: 2px;
+}
+.nav-tabs > li.active {
+    line-height: 29px;
+    border-bottom-color: #cce77c;
+    background: url(../images/tab-menu-li-active-bg.jpg) repeat-x 0 0;
+}
+.nav-tabs > li > a[data-toggle='tab'] {
+    font-weight: bold;
+    line-height: 28px;
+    min-width: 88px;
+    padding: 0 22px;
+    color: #063;
+    border-width: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.nav-tabs > li > a:hover {
+    background-color: transparent;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+    color: #063;
+    border-width: 0;
+    background-color: transparent;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+    background-color: transparent;
+}
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+    background-color: transparent;
+}
+.tab-close {
+    font-weight: bold;
+    position: absolute;
+    top: -4px;
+    right: 2px;
+    cursor: pointer;
+    color: #063;
+}
+.dropdown .tab-close {
+    display: none;
+}
+.dropdown-menu > li {
+    position: relative;
+}
+.dropdown-menu .tab-close {
+    top: 0;
+    right: 6px;
+    color: #808080;
+}
+.tab-pane {
+    position: relative;
+}
+.index {
+    overflow: hidden;
+}
+.add-dialog {
+    position: absolute;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.tab-pane iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.left-arrow,
+.right-arrow,
+.dropdown {
+    position: absolute;
+    z-index: 3;
+    top: 2px;
+    width: 29px;
+    height: 30px;
+    color: #063;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.left-arrow {
+    left: 2px;
+}
+.right-arrow {
+    right: 33px;
+}
+.dropdown {
+    right: 2px;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover {
+    color: #000;
+    background-color: #cce680;
+}
+.dropdown-toggle {
+    display: block;
+    height: 100%;
+    padding: 0;
+    color: #063;
+}
+.dropdown-menu {
+    border-color: #393;
+}
+.dropdown-arrow {
+    position: absolute;
+    top: 11px;
+    left: 8px;
+    width: 10px;
+    height: 5px;
+    background: url(../images/arrow-b-green.png) no-repeat 0 0;
+}

@@ -1,0 +1,15 @@
+.transparent-bg {
+    background: url(../images/transparent.gif) repeat 0 0;
+}
+.placeholder {
+    position: absolute;
+    z-index: -2;
+    cursor: text;
+    color: #999;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}

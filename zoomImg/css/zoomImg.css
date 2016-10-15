@@ -1,0 +1,15 @@
+.img-dialog .dialog-content {
+    border: 0;
+}
+.img-dialog .close {
+    position: absolute;
+    top: -11px;
+    right: -11px;
+    width: 30px;
+    height: 30px;
+    color: '#000';
+    background: url(../images/closebox.png);
+}
+.img-dialog .close span {
+	visibility: hidden;
+}

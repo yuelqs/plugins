@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "microsoft yahei";
+    background-color: #eee;
+}
+
+#chenkbox {
+    margin: 100px auto;
+    width: 800px;
+    position: relative;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    table-layout: fixed;
+    background-color: #fff;
+    border-top: 1px solid #dcdbdb;
+    border-right: 1px solid #dcdbdb;
+}
+
+th {
+    background-color: #ebf3f0;
+    font-size: 13px;
+    color: #000002;
+    height: 25px;
+    cursor: pointer;
+}
+
+th,
+td {
+    text-align: center;
+    border-left: 1px solid #dcdbdb;
+    border-bottom: 1px solid #dcdbdb;
+    padding: 5px 10px;
+}
+
+th {
+    position: relative;
+    cursor: move;
+}
+.select {
+    background-color: #ebf3f0;
+}
+.sort-status {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    right: 25px;
+    cursor: pointer;
+    background: url(../images/sort_both.png) no-repeat 0 0;
+}
+
+.sort-status.dsc  {
+   background: url(../images/sort_desc.png) no-repeat 0 0;
+}
+
+.sort-status.asc {
+   background: url(../images/sort_asc.png) no-repeat 0 0;
+}
+
+.box {
+    position: absolute;
+    background: #fff;
+    text-align: center;
+    top: 0;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    height: 100%;
+    cursor: move;
+}
+
+.box div {
+    line-height: 2;
+}
+
+.box-hide {
+    display: none;
+}
+
+.box-show {
+    display: block;
+}
+
+#box {
+    position: absolute;
+    display: none;
+    background: #fff;
+    text-align: center;
+    top: 0;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    height: 100%;
+    cursor: move;
+}
+
+#box p {
+    line-height: 2;
+}

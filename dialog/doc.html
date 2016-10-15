@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>dialog 插件参数说明</title>
+	<style>
+		table{
+			border-collapse: collapse;
+			width: 100%;
+			text-align: center;
+		}
+		td,th{
+			border:1px solid #ccc;
+			line-height: 30px;
+			padding:5px;
+		}
+		td:last-child{
+			text-align: left;
+		}
+
+	</style>
+</head>
+<body>
+	<h3>参数说明</h3>
+	<table>
+		<thead>
+			<tr>
+				<th>名称</th>
+				<th>类型</th>
+				<th>默认值</th>
+				<th>描述</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>width</td>
+				<td>string/number</td>
+				<td>381</td>
+				<td>设置弹窗的宽度</td>
+			</tr>
+			<tr>
+				<td>type</td>
+				<td>string</td>
+				<td>confirm</td>
+				<td>设置弹窗类型。有三个可选参数 1.confirm, 2.alert,3.basic</td>
+			</tr>
+			<tr>
+				<td>content</td>
+				<td>string/dom</td>
+				<td>默认为空</td>
+				<td>可以传入弹窗内容，可以是dom对象，可以是html标签</td>
+			</tr>
+			<tr>
+				<td>title</td>
+				<td>string</td>
+				<td>系统消息</td>
+				<td>设置弹窗的标题</td>
+			</tr>
+			<tr>
+				<td>closeBtn</td>
+				<td>bool</td>
+				<td>true</td>
+				<td>设置是否需要关闭按钮</td>
+			</tr>
+			<tr>
+				<td>messageType</td>
+				<td>string</td>
+				<td>prompt</td>
+				<td>有四个可选参数 （1.prompt 2.warning 3.alert 4.error）<br/>不同参数会显示不同的图片 <br/>仅在 confirm 和 alert类型的弹窗下会显示图片</td>
+			</tr>
+			<tr>
+				<td>mask</td>
+				<td>bool</td>
+				<td>false</td>
+				<td>设置是否显示遮罩</td>
+			</tr>
+			<tr>
+				<td>onAlertBtnClick</td>
+				<td>function</td>
+				<td>默认为空</td>
+				<td>aletr类型弹窗按钮点击后的回调</td>
+			</tr>
+			<tr>
+				<td>onConfirmBtnClick</td>
+				<td>function</td>
+				<td>默认为空</td>
+				<td>confirm类型弹窗按钮点击后的回调</td>
+			</tr>
+			<tr>
+				<td>onCancelBtnClick</td>
+				<td>function</td>
+				<td>默认为空</td>
+				<td>confirm 弹窗取消按钮的回调</td>
+			</tr>
+			<tr>
+				<td>onCloseBtnClick</td>
+				<td>function</td>
+				<td>默认为空</td>
+				<td>关闭弹窗按钮的回调</td>
+			</tr>
+		</tbody>
+	</table>
+	<h3>使用方法</h3>
+	<p>
+		在html文件中引入 dialog.js和dialog.css文件 在js代码中使用 new CustomDialog({type:...}) 来创建一个弹窗
+	</p>
+</body>
+</html>

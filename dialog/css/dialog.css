@@ -1,0 +1,186 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'simsun';
+        font-size: 12px;
+        position: relative;
+    }
+    
+    .dialog-wrap {
+        margin: 30px auto;
+        position: relative;
+        left: 50%;
+        float: left;
+    }
+    
+    .option label {
+        float: none;
+        text-align: left;
+    }
+    
+    .dialog-container {
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 1050;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
+    .dialog-body {
+        position: relative;
+        padding: 15px;
+    }
+    
+    .dialog-content {
+        background-color: #fff;
+        position: relative;
+        border: 1px solid #063;
+        border-radius: 6px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        left: -50%;
+    }
+    
+    .dialog-header {
+        min-height: 16.43px;
+        padding: 8px 10px;
+        color: #fff;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        background: url(../images/modal-header-bg.png) repeat-x 0 0;
+    }
+    
+    .dialog-header h5 {
+        font-size: 13px;
+    }
+    
+    .dialog-title {
+        line-height: 1.42857;
+        margin: 0;
+    }
+    
+    .dialog-footer {
+        text-align: right;
+    }
+    
+    .dialog-footer .btn + .btn {
+        margin-left: 28px;
+    }
+    
+    .close {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1;
+        float: right;
+        cursor: pointer;
+        color: #fff;
+        border: 0 none;
+        text-shadow: 0 1px 0 #fff;
+        background-color: transparent;
+    }
+    
+    .basic-close {
+        background: url(../images/close.png);
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #fff;
+    }
+    
+    .message:before {
+        position: absolute;
+        top: 50%;
+        left: 29px;
+        margin-top: -32px;
+        width: 65px;
+        height: 65px;
+        content: '';
+    }
+    
+    .alert-message:before {
+        background: url(../images/message-icon.png) no-repeat 0 0;
+    }
+    
+    .error-message:before {
+        background: url(../images/message-icon.png) no-repeat -66px 0;
+    }
+    
+    .prompt-message:before {
+        background: url(../images/message-icon.png) no-repeat -132px 0;
+    }
+    
+    .warning-message:before {
+        background: url(../images/message-icon.png) no-repeat -198px 0;
+    }
+    
+    .message {
+        position: relative;
+        margin-top: 35px;
+        padding: 0 0 0 117px;
+    }
+    
+    .message p {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .dialog-footer {
+        padding: 0 0 35px 0;
+    }
+    
+    .dialog-mask {
+        background-color: #000;
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 1040;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+    
+    .mr90 {
+        margin-right: 90px;
+    }
+    
+    .mr170 {
+        margin-right: 150px;
+    }
+    
+    .btn {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.42857;
+        display: inline-block;
+        padding: 5px 18px;
+        cursor: pointer;
+        outline: 0;
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+        border: 1px solid transparent;
+        border-radius: 3px;
+    }
+    
+    .btn-green:hover,
+    .btn-green:focus {
+        color: #fff;
+    }
+    
+    .btn-green,
+    .btn-green:active {
+        color: #fff;
+        background: url(../images/btn-green-bg.jpg) no-repeat 0 0;
+    }
+    
+    .btn-gray,
+    .btn-gray:active {
+        color: #000;
+        background: url(../images/btn-gray-bg.gif) no-repeat 0 0;
+    }

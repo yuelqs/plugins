@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/dialog.css">
+    <style type="text/css">
+    .option,
+    .w1000 {
+        width: 680px;
+    }
+    
+    .w1000 {
+        text-align: center;
+    }
+    .img {
+        filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='file:///E:/%E7%BB%84%E4%BB%B6/dialog/images/Tulips.jpg');
+    }
+    </style>
+</head>
+
+<body>
+    <div class="option clearfix">
+        <div class="fl-l">
+            <label for="num">弹出框类型</label>
+            <label>
+                <input type="radio" name="num" value="alert"> 警告
+            </label>
+            <label>
+                <input type="radio" name="num" value="confirm"> 确认
+            </label>
+            <label>
+                <input type="radio" name="num" value="basic">基本
+            </label>
+        </div>
+        <div class="fl-l">
+            <label for="">消息类型</label>
+            <label>
+                <input type="radio" name="messageType" value="warning"> 警告
+            </label>
+            <label>
+                <input type="radio" name="messageType" value="prompt"> 提示
+            </label>
+            <label>
+                <input type="radio" name="messageType" value="error"> 错误
+            </label>
+            <label>
+                <input type="radio" name="messageType" value="alert"> 弹出
+            </label>
+        </div>
+        <div class="fl-l">
+            <label>弹出框标题</label>
+            <input type="text" name="title">
+        </div>
+        <div class="fl-l">
+            <label>提示/警告/错误 提示文字</label>
+            <textarea></textarea>
+        </div>
+    </div>
+    <div class="clearfix w1000">
+        <button id="tc">弹出一个modal</button>
+    </div>
+    <script type="text/javascript" data-main ='js/main' src="../lib/requirejs/require.min.js"></script>
+</body>
+
+</html>

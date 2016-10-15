@@ -48,14 +48,14 @@ define(['jquery'], function ($) {
                 '<div class="dialog-container ',
                 this.option.skin,
                 '">',
-                '<div class="dialog">',
+                '<div class="dialog-wrap">',
                 '<div class="dialog-content">',
                 this.option.type == 'basic' ? '' : '<div class="dialog-header"></div>',
                 '<div class="dialog-body"></div>',
                 this.option.type == 'basic' ? '' : '<div class="dialog-footer"></div>',
                 '</div></div></div>'
             ].join(''));
-            this.$dialog = this.$container.find('.dialog');
+            this.$dialog = this.$container.find('.dialog-wrap');
             this.$dialog.css({
                 width: this.option.type != 'basic' ? this.option.width : 'auto'
 

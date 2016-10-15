@@ -44,7 +44,7 @@
                 '<div class="dialog-container ',
                 this.option.skin,
                 '">',
-                '<div class="dialog">',
+                '<div class="dialog-wrap">',
                 '<div class="dialog-content">',
                 this.option.type == 'basic' ? '' : '<div class="dialog-header"></div>',
                 '<div class="dialog-body"></div>',

@@ -10,18 +10,15 @@
 </head>
 
 <body>
-    <form action="http://192.168.0.200:8080/attachment/uploadImg" method="post" target="f" enctype="multipart/form-data">
-        <div class="select-more">
-            <span class="select-icon">
+    <form class="img-form">
+        <label class="select-img">请选择图片：</label>
+        <span class="select-icon">选 择
             <input type="file" class="hidden-inputfile" accept="image/jpg,image/png,image/jpeg" name="attachment" id="attachment0">
-            </span>
-        </div>
-        <button type="submit">上传</button>
+        </span>
     </form>
     <div class="img-container">
     </div>
-    <iframe src="" frameborder="0" name="f"></iframe>
-    <script type="text/javascript" data-main ='js/main' src="../lib/requirejs/require.min.js"></script>
+    <script type="text/javascript" data-main='js/main' src="../lib/requirejs/require.min.js"></script>
 </body>
 
 </html>

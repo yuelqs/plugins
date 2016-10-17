@@ -1,5 +1,5 @@
 require.config({
-    baseUrl: '/',
+    baseUrl: '../',
     paths: {
         jquery: 'lib/jquery/jquery-1.12.0.min',
         zoomImg: 'zoomImg/js/zoomImg'
@@ -7,11 +7,10 @@ require.config({
 });
 
 require(['jquery', 'zoomImg'], function ($, zoomImg) {
-    $(document).on('imgClick.zoomImg', function (e, el) {
+    $('.img-container').on('click', 'img', function(e) {
         new zoomImg({
             skin: 'img-dialog',
-            content: el
+            content:e.target
         });
-    })
-
+    });
 })

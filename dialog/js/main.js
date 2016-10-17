@@ -20,7 +20,7 @@ require(['dialog', 'jquery'], function (CustomDialog, $) {
                 option.messageType = this.value;
             }
         })
-        option.title = $('input[name="title"]').val();
+        $('input[name="title"]').val() ===''?'':option.title=title;
         option.content = $('textarea').val();
         new CustomDialog(option)
     })

@@ -20,7 +20,11 @@ require(['dialog', 'jquery'], function (CustomDialog, $) {
                 option.messageType = this.value;
             }
         })
+<<<<<<< HEAD
         option.title = $('input[name="title"]').val();
+=======
+        $('input[name="title"]').val() ===''?'':option.title=title;
+>>>>>>> gh-pages
         option.content = $('textarea').val();
         new CustomDialog(option)
     })

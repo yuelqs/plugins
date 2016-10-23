@@ -4,6 +4,7 @@
             box-sizing: border-box;
         }
         body {
+<<<<<<< HEAD
             font-family: 'simsun'
         }
         .select-more {
@@ -24,6 +25,26 @@
             width: 22px;
             background-color: dodgerblue;
             overflow: hidden;
+=======
+            font-family: 'msyahei','simsun'
+        }
+        .select-img {
+            display: inline-block;
+            line-height: 28px;
+            vertical-align: middle
+        }
+        .select-icon {
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            color: #fff;
+            line-height: 28px;
+            padding: 0 20px;
+            background: url('../images/tab-menu-li-bg.gif') repeat-x 0 0;
+            overflow: hidden;
+            border-radius: 4px;
+>>>>>>> gh-pages
         }
         .hidden-inputfile {
             font-size: 50px;
@@ -33,13 +54,23 @@
             right: 0;
             top: 0;
         }
+<<<<<<< HEAD
+=======
+        .img-form {
+            margin: 10px 0 0 5px;
+        }
+>>>>>>> gh-pages
         .img-container {
             overflow: hidden;
         }
         .img-wrap {
             position: relative;
             float: left;
+<<<<<<< HEAD
             margin-left: 6px;
+=======
+            margin: 10px 0 0 6px;
+>>>>>>> gh-pages
         }
         .img-close {
             position: absolute;
